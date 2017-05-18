@@ -1,0 +1,34 @@
++-------------------+
+| BILL OF MATERIALS |
++-------------------+
+
+The following is a list of all the parts required to construct the FreshBytes
+system. They are organized by the distributor which the parts are purchased 
+from. 
+
++-----------------------------------------------------------------+
+| DISTRIBUTOR: DIGIKEY                                            |
++--------------------------------+---------------------+----------+
+| Part Name                      | Part Number         | Quantity |
++--------------------------------+---------------------+----------+
+| 40 Pos Socket to Cable         | H1CXS-4036G-ND      | 1        |
+| 40 Pos Female Socket to Cbl    | AE11124-ND          | 1        |
+| 40 Pos Male Socket to Board    | S9175-ND            | 1        |
+| 9 Pos Din Cable                | 839-1054-ND         | 1        |
+| 9 Pos Mini Din Connector       | CP-2290-ND          | 1        |
+| 10 Pos Ribbon Cable            | H2MXS-1006G-ND      | 1        |
+| 4x1 MUX                        | 568-10088-1-ND      | 1        |
+| Power Receptacle - Main        | Q219-ND             | 1        |
+| Power Receptacle - Accessories | 486-1343-ND         | 2        |
+| AC DC Converter                | 945-1401-5-ND       | 1        |
+| Relay                          | PB1014-ND           | 2        |
+| Power Chord                    | Q103-ND             | 1        |
+| 200 Ohm 0805 Resistor          | RMCF0805JT200RCT-ND | 2        |
+| 470 Ohm 0805 Resistor          | RMCF0805JT470RCT-ND | 4        |
+| 3.3k Ohm 0805 Resistor         | RMCF0805JT3K30CT-ND | 2        |
+| 4.7 k Ohm 0805 Resistor        | RMCF0805JT4K70CT-ND | 1        |
+| PC817 Opto-isolator            | 425-2774-1-ND       | 2        |
+| 2N2222 Transistor              | ?                   | 2        |
+| 2 Pos Screw Terminal           | ED1501-ND           | 1        |
++--------------------------------+---------------------+----------+
+DIODES?
