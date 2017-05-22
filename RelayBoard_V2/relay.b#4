@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -125,11 +125,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="2.99999375" y1="0" x2="124.00000625" y2="0" width="0" layer="20"/>
-<wire x1="124.00000625" y1="0" x2="127" y2="2.99999375" width="0" layer="20" curve="90"/>
-<wire x1="127" y1="2.99999375" x2="127" y2="82.000090625" width="0" layer="20"/>
-<wire x1="127" y1="82.000090625" x2="124.00000625" y2="85.000084375" width="0" layer="20" curve="90"/>
-<wire x1="124.00000625" y1="85.000084375" x2="2.99999375" y2="85.000084375" width="0" layer="20"/>
+<wire x1="2.99999375" y1="0" x2="154.48000625" y2="0" width="0" layer="20"/>
+<wire x1="154.48000625" y1="0" x2="157.48" y2="2.99999375" width="0" layer="20" curve="90"/>
+<wire x1="157.48" y1="2.99999375" x2="157.48" y2="82.000090625" width="0" layer="20"/>
+<wire x1="157.48" y1="82.000090625" x2="154.48000625" y2="85.000084375" width="0" layer="20" curve="90"/>
+<wire x1="154.48000625" y1="85.000084375" x2="2.99999375" y2="85.000084375" width="0" layer="20"/>
 <wire x1="2.99999375" y1="85.000084375" x2="0" y2="82.000090625" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="82.000090625" x2="0" y2="2.99999375" width="0" layer="20"/>
 <wire x1="0" y1="2.99999375" x2="2.99999375" y2="0" width="0" layer="20" curve="90"/>
@@ -18047,7 +18047,7 @@ design rules under a new name.</description>
 <element name="R7" library="adafruit" package="R0805" value="10K" x="-54.61" y="-41.91"/>
 <element name="R8" library="adafruit" package="R0805" value="10K" x="-54.61" y="-45.72"/>
 <element name="R9" library="adafruit" package="R0805" value="4.7K" x="-54.61" y="-63.5"/>
-<element name="U$1" library="BloomWall" package="PIN_20X2_NOTFLIPPED" value="PIN_20X2_NOTFLIPPED" x="7.62" y="28.370071875"/>
+<element name="U$1" library="BloomWall" package="PIN_20X2_NOTFLIPPED" value="PIN_20X2_NOTFLIPPED" x="-90.17" y="-111.76"/>
 <element name="U$4" library="BloomWall" package="9POS_MINI_DIN" value="9POS_MINI_DIN" x="-73.66" y="-130.81"/>
 <element name="U$5" library="BloomWall" package="IEC_MALE" value="IEC_MALE" x="-72.39" y="-167.64"/>
 <element name="U$6" library="BloomWall" package="IEC_FEMALE" value="IEC_FEMALE" x="-72.39" y="-195.58"/>
@@ -18057,12 +18057,12 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R2" pad="2"/>
 <contactref element="U$1" pad="ID_SC"/>
-<wire x1="96.52" y1="22.44" x2="8.89" y2="43.610071875" width="0" layer="19" extent="1-1"/>
+<wire x1="96.52" y1="22.44" x2="-88.9" y2="-96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="2"/>
 <contactref element="U$1" pad="GND1"/>
-<wire x1="91.44" y1="22.44" x2="8.89" y2="41.070071875" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="22.44" x2="-88.9" y2="-99.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R1" pad="1"/>
@@ -18083,7 +18083,7 @@ design rules under a new name.</description>
 <contactref element="R3" pad="2"/>
 <contactref element="R4" pad="2"/>
 <contactref element="U$1" pad="GND7"/>
-<wire x1="17.36" y1="44.45" x2="6.35" y2="28.370071875" width="0" layer="19" extent="1-1"/>
+<wire x1="17.36" y1="44.45" x2="-91.44" y2="-111.76" width="0" layer="19" extent="1-1"/>
 <wire x1="22.44" y1="44.45" x2="17.36" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND">
@@ -18091,8 +18091,8 @@ design rules under a new name.</description>
 <contactref element="T2" pad="E"/>
 <contactref element="U$1" pad="GPIO12"/>
 <contactref element="U$4" pad="P8"/>
-<wire x1="8.89" y1="38.530071875" x2="-71.5645" y2="-141.732" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="35.56" x2="8.89" y2="38.530071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.9" y1="-101.6" x2="-71.5645" y2="-141.732" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="35.56" x2="-88.9" y2="-101.6" width="0" layer="19" extent="1-1"/>
 <wire x1="90.17" y1="12.7" x2="25.4" y2="35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
@@ -18208,12 +18208,12 @@ design rules under a new name.</description>
 <signal name="N$7">
 <contactref element="U$8" pad="X-COM"/>
 <contactref element="U$1" pad="GPIO13"/>
-<wire x1="-2.865" y1="-32.635" x2="6.35" y2="35.990071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.865" y1="-32.635" x2="-91.44" y2="-104.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="U$8" pad="Y-COM"/>
 <contactref element="U$1" pad="GPIO6"/>
-<wire x1="-3.515" y1="-38.485" x2="6.35" y2="38.530071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.515" y1="-38.485" x2="-91.44" y2="-101.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$22">
 <contactref element="U$8" pad="2Y"/>
@@ -18249,14 +18249,14 @@ design rules under a new name.</description>
 <contactref element="U$8" pad="B"/>
 <contactref element="R8" pad="1"/>
 <contactref element="U$1" pad="GND6"/>
-<wire x1="-55.61" y1="-45.72" x2="6.35" y2="46.150071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.61" y1="-45.72" x2="-91.44" y2="-93.98" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.265" y1="-32.635" x2="-55.61" y2="-45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="U$8" pad="A"/>
 <contactref element="R7" pad="1"/>
 <contactref element="U$1" pad="SCLK"/>
-<wire x1="-55.61" y1="-41.91" x2="6.35" y2="48.690071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.61" y1="-41.91" x2="-91.44" y2="-91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.915" y1="-32.635" x2="-55.61" y2="-41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
@@ -18267,7 +18267,7 @@ design rules under a new name.</description>
 <contactref element="U$8" pad="VEE"/>
 <contactref element="U$8" pad="INH"/>
 <contactref element="U$1" pad="GPIO19"/>
-<wire x1="-52.07" y1="-19.05" x2="6.35" y2="33.450071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="-19.05" x2="-91.44" y2="-106.68" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.56" y1="-19.05" x2="-52.07" y2="-19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="-19.05" x2="-35.56" y2="-19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.565" y1="-38.485" x2="-19.05" y2="-19.05" width="0" layer="19" extent="1-1"/>
@@ -18280,7 +18280,7 @@ design rules under a new name.</description>
 <contactref element="U$10" pad="VCC"/>
 <contactref element="U$8" pad="VCC"/>
 <contactref element="U$1" pad="GPIO26"/>
-<wire x1="-52.07" y1="-36.83" x2="6.35" y2="30.910071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.07" y1="-36.83" x2="-91.44" y2="-109.22" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.56" y1="-36.83" x2="-52.07" y2="-36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.05" y1="-36.83" x2="-35.56" y2="-36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.815" y1="-32.635" x2="-19.05" y2="-36.83" width="0" layer="19" extent="1-1"/>
@@ -18289,22 +18289,22 @@ design rules under a new name.</description>
 <contactref element="R8" pad="2"/>
 <contactref element="R7" pad="2"/>
 <contactref element="U$1" pad="GPIO17"/>
-<wire x1="-53.61" y1="-45.72" x2="6.35" y2="63.930071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.61" y1="-45.72" x2="-91.44" y2="-76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.61" y1="-41.91" x2="-53.61" y2="-45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="R9" pad="1"/>
 <contactref element="U$1" pad="GND"/>
 <contactref element="U$4" pad="P5"/>
-<wire x1="8.89" y1="35.990071875" x2="-73.66" y2="-141.732" width="0" layer="19" extent="1-1"/>
-<wire x1="-55.61" y1="-63.5" x2="8.89" y2="35.990071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.9" y1="-104.14" x2="-73.66" y2="-141.732" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.61" y1="-63.5" x2="-88.9" y2="-104.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="R9" pad="2"/>
 <contactref element="U$1" pad="GPIO21"/>
 <contactref element="U$4" pad="P4"/>
-<wire x1="8.89" y1="28.370071875" x2="-75.7555" y2="-141.732" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.61" y1="-63.5" x2="8.89" y2="28.370071875" width="0" layer="19" extent="1-1"/>
+<wire x1="-88.9" y1="-111.76" x2="-75.7555" y2="-141.732" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.61" y1="-63.5" x2="-88.9" y2="-111.76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$37">
 <contactref element="U$11" pad="PRB"/>
