@@ -16,7 +16,6 @@ from.
 | 40 Pos Male Socket to Board    | S9175-ND            | 1        |
 | 9 Pos Din Cable                | 839-1054-ND         | 1        |
 | 9 Pos Mini Din Connector       | CP-2290-ND          | 1        |
-| 10 Pos Ribbon Cable            | H2MXS-1006G-ND      | 1        |
 | 4x1 MUX                        | 568-10088-1-ND      | 1        |
 | Power Receptacle - Main        | Q219-ND             | 1        |
 | Power Receptacle - Accessories | 486-1343-ND         | 2        |
