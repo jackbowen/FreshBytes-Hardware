@@ -17,7 +17,7 @@ from.
 | 9 Pos Din Cable                | 839-1054-ND         | 1        |
 | 9 Pos Mini Din Connector       | CP-2290-ND          | 1        |
 | 4x1 MUX                        | 568-10088-1-ND      | 1        |
-| Power Receptacle - Main        | Q219-ND             | 1        |
+| Power Receptacle - Main        | Q210-ND             | 1        |
 | Power Receptacle - Accessories | 486-1343-ND         | 2        |
 | AC DC Converter                | 945-1401-5-ND       | 1        |
 | Relay                          | PB1014-ND           | 2        |
