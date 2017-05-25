@@ -28,6 +28,6 @@ from.
 | 4.7 k Ohm 0805 Resistor        | RMCF0805JT4K70CT-ND | 1        |
 | PC817 Opto-isolator            | 425-2774-1-ND       | 2        |
 | 2N2222 Transistor              | ?                   | 2        |
-| 2 Pos Screw Terminal           | ED1501-ND           | 1        |
+| 2 Pos Screw Terminal           | A121350-ND          | 1        |
+| 1N4148 Diode                   | 1N4148FS-ND         | 2        |
 +--------------------------------+---------------------+----------+
-DIODES?
