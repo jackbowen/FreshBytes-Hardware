@@ -22386,7 +22386,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="U$3" library="BloomWall" deviceset="VTB8441BH" device=""/>
 <part name="U$17" library="BloomWall" deviceset="RAC02-05SC_ACDCCONVERTER" device=""/>
 <part name="X1" library="con-molex" deviceset="22-23-2021" device=""/>
-<part name="U$8" library="BloomWall" deviceset="7HC4052_MUX" device=""/>
+<part name="MUX" library="BloomWall" deviceset="7HC4052_MUX" device=""/>
 <part name="U$9" library="BloomWall" deviceset="ATLAS_DO_WITH_ICON" device=""/>
 <part name="U$10" library="BloomWall" deviceset="ATLAS_PH_WITH_ICON" device=""/>
 <part name="U$11" library="BloomWall" deviceset="ATLAS_PPM_WITH_ICON" device=""/>
@@ -22423,7 +22423,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="U$17" gate="G$1" x="-45.72" y="106.68"/>
 <instance part="X1" gate="-1" x="7.62" y="101.6"/>
 <instance part="X1" gate="-2" x="7.62" y="99.06"/>
-<instance part="U$8" gate="G$1" x="274.32" y="66.04"/>
+<instance part="MUX" gate="G$1" x="274.32" y="66.04"/>
 <instance part="U$9" gate="G$1" x="327.66" y="93.98" rot="R90"/>
 <instance part="U$10" gate="G$1" x="327.66" y="76.2" rot="R90"/>
 <instance part="U$11" gate="G$1" x="327.66" y="58.42" rot="R90"/>
@@ -22721,7 +22721,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="X-COM"/>
+<pinref part="MUX" gate="G$1" pin="X-COM"/>
 <wire x1="261.62" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GPIO13"/>
 </segment>
@@ -22730,28 +22730,28 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <wire x1="205.74" y1="81.28" x2="254" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="254" y1="81.28" x2="254" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="Y-COM"/>
+<pinref part="MUX" gate="G$1" pin="Y-COM"/>
 <wire x1="254" y1="73.66" x2="261.62" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GPIO6"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="2Y"/>
+<pinref part="MUX" gate="G$1" pin="2Y"/>
 <pinref part="U$11" gate="G$1" pin="TX"/>
 <wire x1="284.48" y1="58.42" x2="317.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="2X"/>
+<pinref part="MUX" gate="G$1" pin="2X"/>
 <pinref part="U$11" gate="G$1" pin="RX"/>
 <wire x1="284.48" y1="63.5" x2="317.5" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="1Y"/>
+<pinref part="MUX" gate="G$1" pin="1Y"/>
 <wire x1="284.48" y1="68.58" x2="304.8" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="68.58" x2="304.8" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="TX"/>
@@ -22760,7 +22760,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="1X"/>
+<pinref part="MUX" gate="G$1" pin="1X"/>
 <wire x1="284.48" y1="73.66" x2="302.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="73.66" x2="302.26" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="RX"/>
@@ -22769,7 +22769,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="0Y"/>
+<pinref part="MUX" gate="G$1" pin="0Y"/>
 <wire x1="284.48" y1="78.74" x2="299.72" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="78.74" x2="299.72" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="TX"/>
@@ -22778,7 +22778,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="0X"/>
+<pinref part="MUX" gate="G$1" pin="0X"/>
 <wire x1="284.48" y1="83.82" x2="297.18" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="297.18" y1="83.82" x2="297.18" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="RX"/>
@@ -22790,7 +22790,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="205.74" y1="88.9" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="88.9" x2="243.84" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="88.9" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="B"/>
+<pinref part="MUX" gate="G$1" pin="B"/>
 <wire x1="243.84" y1="63.5" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="93.98" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
@@ -22800,7 +22800,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="A"/>
+<pinref part="MUX" gate="G$1" pin="A"/>
 <wire x1="261.62" y1="68.58" x2="248.92" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="68.58" x2="248.92" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
@@ -22830,13 +22830,13 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="238.76" y1="53.34" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="48.26" x2="238.76" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="38.1" x2="309.88" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
+<pinref part="MUX" gate="G$1" pin="GND"/>
 <wire x1="261.62" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
 <junction x="238.76" y="48.26"/>
-<pinref part="U$8" gate="G$1" pin="VEE"/>
+<pinref part="MUX" gate="G$1" pin="VEE"/>
 <wire x1="261.62" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <junction x="238.76" y="53.34"/>
-<pinref part="U$8" gate="G$1" pin="INH"/>
+<pinref part="MUX" gate="G$1" pin="INH"/>
 <wire x1="261.62" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
 <junction x="238.76" y="58.42"/>
 <pinref part="U$1" gate="G$1" pin="GPIO19"/>
@@ -22858,7 +22858,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="U$10" gate="G$1" pin="VCC"/>
 <wire x1="337.82" y1="71.12" x2="350.52" y2="71.12" width="0.1524" layer="91"/>
 <junction x="350.52" y="71.12"/>
-<pinref part="U$8" gate="G$1" pin="VCC"/>
+<pinref part="MUX" gate="G$1" pin="VCC"/>
 <wire x1="261.62" y1="83.82" x2="256.54" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="83.82" x2="256.54" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="111.76" x2="350.52" y2="111.76" width="0.1524" layer="91"/>

@@ -16588,16 +16588,10 @@
 <wire x1="11.43" y1="0" x2="25" y2="0" width="0.127" layer="21"/>
 <wire x1="25" y1="0" x2="25" y2="-6.35" width="0.127" layer="21"/>
 </package>
-<package name="IEC_MALE">
-<pad name="GND" x="0" y="0" drill="1.8034"/>
-<pad name="NEUTRAL" x="-7.0000125" y="0" drill="1.8034"/>
-<pad name="HOT" x="7.0000125" y="0" drill="1.8034"/>
-<hole x="-19.75" y="7.300009375" drill="3.49999375"/>
-<hole x="19.75" y="7.300009375" drill="3.49999375"/>
-<wire x1="12.7" y1="0" x2="25" y2="0" width="0.127" layer="21"/>
-<wire x1="25" y1="0" x2="25" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="0" x2="-25" y2="0" width="0.127" layer="21"/>
-<wire x1="-25" y1="0" x2="-25" y2="3.81" width="0.127" layer="21"/>
+<package name="MAIN">
+<pad name="GROUND" x="0" y="0" drill="2.286" diameter="5.715"/>
+<pad name="HOT" x="-7.62" y="0" drill="2.286" diameter="5.715"/>
+<pad name="NEUTRAL" x="7.62" y="0" drill="2.286" diameter="5.715"/>
 </package>
 </packages>
 <symbols>
@@ -16761,14 +16755,14 @@
 <wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 </symbol>
-<symbol name="IEC_MALE">
-<pin name="GROUND" x="7.62" y="0" length="short" direction="pwr" rot="R180"/>
-<pin name="NEUTRAL" x="7.62" y="5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="HOT" x="7.62" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<wire x1="5.08" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<symbol name="MAIN">
+<pin name="GROUND" x="5.08" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="NEUTRAL" x="5.08" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="HOT" x="5.08" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17023,14 +17017,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="IEC_MALE">
+<deviceset name="MAIN">
 <gates>
-<gate name="G$1" symbol="IEC_MALE" x="2.54" y="0"/>
+<gate name="G$1" symbol="MAIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IEC_MALE">
+<device name="" package="MAIN">
 <connects>
-<connect gate="G$1" pin="GROUND" pad="GND"/>
+<connect gate="G$1" pin="GROUND" pad="GROUND"/>
 <connect gate="G$1" pin="HOT" pad="HOT"/>
 <connect gate="G$1" pin="NEUTRAL" pad="NEUTRAL"/>
 </connects>
@@ -22403,7 +22397,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="U$4" library="BloomWall" deviceset="9POS_MINI_DIN" device=""/>
 <part name="U$6" library="BloomWall" deviceset="IEC_FEMALE" device=""/>
 <part name="U$7" library="BloomWall" deviceset="IEC_FEMALE" device=""/>
-<part name="U$5" library="BloomWall" deviceset="IEC_MALE" device=""/>
+<part name="U$12" library="BloomWall" deviceset="MAIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22440,7 +22434,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="U$4" gate="G$1" x="408.94" y="93.98" rot="R90"/>
 <instance part="U$6" gate="G$1" x="50.8" y="96.52" rot="R270"/>
 <instance part="U$7" gate="G$1" x="50.8" y="20.32" rot="R270"/>
-<instance part="U$5" gate="G$1" x="-116.84" y="109.22"/>
+<instance part="U$12" gate="G$1" x="-114.3" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -22687,7 +22681,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="K1" gate="G$1" pin="COM"/>
 <wire x1="124.46" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="HOT"/>
+<pinref part="U$12" gate="G$1" pin="HOT"/>
 </segment>
 </net>
 <net name="N$20" class="1">
@@ -22705,7 +22699,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-109.22" y1="114.3" x2="-109.22" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="NEUTRAL"/>
 <pinref part="U$7" gate="G$1" pin="NEUTRAL"/>
-<pinref part="U$5" gate="G$1" pin="NEUTRAL"/>
+<pinref part="U$12" gate="G$1" pin="NEUTRAL"/>
 </segment>
 </net>
 <net name="PGND" class="1">
@@ -22722,7 +22716,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <junction x="111.76" y="81.28"/>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
-<pinref part="U$5" gate="G$1" pin="GROUND"/>
+<pinref part="U$12" gate="G$1" pin="GROUND"/>
 </segment>
 </net>
 <net name="N$7" class="0">
