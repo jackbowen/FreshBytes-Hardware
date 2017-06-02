@@ -290,9 +290,9 @@
 <wire x1="25" y1="0" x2="25" y2="-6.35" width="0.127" layer="21"/>
 </package>
 <package name="MAIN">
-<pad name="GROUND" x="0" y="0" drill="2.286" diameter="5.715"/>
-<pad name="HOT" x="-7.62" y="0" drill="2.286" diameter="5.715"/>
-<pad name="NEUTRAL" x="7.62" y="0" drill="2.286" diameter="5.715"/>
+<pad name="GROUND" x="0" y="0" drill="2.286" diameter="3.81"/>
+<pad name="HOT" x="-7.62" y="0" drill="2.286" diameter="3.81"/>
+<pad name="NEUTRAL" x="7.62" y="0" drill="2.286" diameter="3.81"/>
 </package>
 <package name="ATLAS_DO_WITH_ICON">
 <pad name="GND" x="-2.54" y="8.89" drill="0.8" shape="octagon"/>
