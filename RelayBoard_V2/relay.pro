@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /home/jack/Projects/FreshBytes/FreshBytes-Hardware/RelayBoard_V2/relay.brd
 
-Start at      : 03:01:32 (5/31/17)
-End at        : 03:02:05 (5/31/17)
-Elapsed time  : 00:00:28
+Start at      : 18:57:20 (6/1/17)
+End at        : 18:57:28 (6/1/17)
+Elapsed time  : 00:00:06
 
-Signals       :    52   RoutingGrid: 5.5 mil  Layers: 2
-Connections   :    72   predefined:  24 ( 0 Vias )
+Signals       :    45   RoutingGrid: 12.5 mil  Layers: 2
+Connections   :    79   predefined:  39 ( 2 Vias )
 
-Router memory :   3827680
+Router memory :   876072
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:07  00:00:01  00:00:05  00:00:05  00:00:05  00:00:05
+Time per pass     :  00:00:00  00:00:01  00:00:01  00:00:01  00:00:01  00:00:02
 Number of Ripups  :         0         0         0         0         0         0
 max. Level        :         0         0         0         0         0         0
 max. Total        :         0         0         0         0         0         0
 
-Routed            :        38        48        48        48        48        48
-Vias              :         0        22        27        20        24        24
-Resolution        :    86.1 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         4        40        40        40        40        40
+Vias              :         0        46        24        19        16        16
+Resolution        :    54.4 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 98.7% finished. Polygons may have fallen apart.
