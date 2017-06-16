@@ -25,9 +25,22 @@ from.
 | 200 Ohm 0805 Resistor          | RMCF0805JT200RCT-ND | 2        |
 | 470 Ohm 0805 Resistor          | RMCF0805JT470RCT-ND | 4        |
 | 3.3k Ohm 0805 Resistor         | RMCF0805JT3K30CT-ND | 2        |
-| 4.7 k Ohm 0805 Resistor        | RMCF0805JT4K70CT-ND | 1        |
+| 4.7k Ohm 0805 Resistor         | RMCF0805JT4K70CT-ND | 1        |
+| 10k Ohm 0805 Resistor          | RMCF0805JT10K0CT-ND | 2        |
 | PC817 Opto-isolator            | 425-2774-1-ND       | 2        |
 | 2N2222 Transistor              | ?                   | 2        |
 | 2 Pos Screw Terminal           | A121350-ND          | 1        |
 | 1N4148 Diode                   | 1N4148FS-ND         | 2        |
 +--------------------------------+---------------------+----------+
+
++-----------------------------------------------------------------------+
+| DISTRIBUTOR: MCMASTER-CARR                                            |
++----------------------------------------------+-------------+----------+
+| Part Name                                    | Part Number | Quantity |
++----------------------------------------------+-------------+----------+
+| M4 x 0.7 mm 12mm Stainless Steel Flat Head   | 93395A257   | 1        |
+| M4 x 0.7 mm Stainless Steel Nut              | 94150A335   | 1        |
+| M2.5 x 0.45 mm 3mm Steel Rounded Head Screw  | 92005A052   | 1        |
+| M2.5 x 0.45 mm Zinc-Plated Steel Nut         | 90591A113   | 1        |
+| M2.5 x 0.45 mm 8mm Stainless Steel Flat Head | 91801A137   | 1        |
++----------------------------------------------+-------------+----------+
