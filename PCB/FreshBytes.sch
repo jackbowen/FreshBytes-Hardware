@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -64,6 +65,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -141,18 +144,6 @@
 <libraries>
 <library name="BloomWall">
 <packages>
-<package name="T9AS1D12-5">
-<pad name="NO" x="0" y="-7.62" drill="2.0574" diameter="5.715"/>
-<pad name="COM" x="-17.78" y="-10.16" drill="1.9812" diameter="5.715"/>
-<pad name="COIL2" x="-3.81" y="-22.86" drill="1.0922"/>
-<pad name="COIL1" x="-13.97" y="-22.86" drill="1.0922"/>
-<wire x1="6.35" y1="3.81" x2="6.35" y2="-29.21" width="1.27" layer="51"/>
-<wire x1="6.35" y1="-29.21" x2="-21.59" y2="-29.21" width="1.27" layer="51"/>
-<wire x1="-21.59" y1="-29.21" x2="-21.59" y2="3.81" width="1.27" layer="51"/>
-<wire x1="-21.59" y1="3.81" x2="6.35" y2="3.81" width="1.27" layer="51"/>
-<text x="8.89" y="0" size="2.0066" layer="25">&gt;Name</text>
-<text x="8.89" y="-2.54" size="1.27" layer="25" ratio="10">&gt;Value</text>
-</package>
 <package name="VTB8441BH">
 <pad name="ANODE" x="2.54" y="0" drill="0.8"/>
 <pad name="CATH" x="-2.54" y="0" drill="0.8"/>
@@ -213,52 +204,6 @@
 <rectangle x1="-1.7875" y1="2.2425" x2="-1.4625" y2="3.315" layer="51"/>
 <rectangle x1="-2.4375" y1="2.2425" x2="-2.1125" y2="3.315" layer="51"/>
 </package>
-<package name="PIN_20X2_NOTFLIPPED">
-<pad name="GND7" x="-1.27" y="0" drill="0.8"/>
-<pad name="GPIO21" x="1.27" y="0" drill="0.8"/>
-<pad name="GPIO26" x="-1.27" y="2.54" drill="0.8"/>
-<pad name="GPIO20" x="1.27" y="2.54" drill="0.8"/>
-<pad name="GPIO19" x="-1.27" y="5.08" drill="0.8"/>
-<pad name="GPIO16" x="1.27" y="5.08" drill="0.8"/>
-<pad name="GPIO13" x="-1.27" y="7.62" drill="0.8"/>
-<pad name="GND" x="1.27" y="7.62" drill="0.8"/>
-<pad name="GPIO6" x="-1.27" y="10.16" drill="0.8" rot="R90"/>
-<pad name="GPIO12" x="1.27" y="10.16" drill="0.8" rot="R90"/>
-<pad name="GPIO5" x="-1.27" y="12.7" drill="0.8" rot="R90"/>
-<pad name="GND1" x="1.27" y="12.7" drill="0.8" rot="R90"/>
-<pad name="ID_SD" x="-1.27" y="15.24" drill="0.8" rot="R90"/>
-<pad name="ID_SC" x="1.27" y="15.24" drill="0.8" rot="R90"/>
-<pad name="GND6" x="-1.27" y="17.78" drill="0.8" rot="R90"/>
-<pad name="GPIO7" x="1.27" y="17.78" drill="0.8" rot="R90"/>
-<pad name="SCLK" x="-1.27" y="20.32" drill="0.8" rot="R90"/>
-<pad name="GPIO8" x="1.27" y="20.32" drill="0.8" rot="R90"/>
-<pad name="MISO" x="-1.27" y="22.86" drill="0.8" rot="R90"/>
-<pad name="GPIO25" x="1.27" y="22.86" drill="0.8" rot="R90"/>
-<pad name="MOSI" x="-1.27" y="25.4" drill="0.8" rot="R90"/>
-<pad name="GND2" x="1.27" y="25.4" drill="0.8" rot="R90"/>
-<pad name="3_3V1" x="-1.27" y="27.94" drill="0.8" rot="R90"/>
-<pad name="GPIO24" x="1.27" y="27.94" drill="0.8" rot="R90"/>
-<pad name="GPIO22" x="-1.27" y="30.48" drill="0.8" rot="R90"/>
-<pad name="GPIO23" x="1.27" y="30.48" drill="0.8" rot="R90"/>
-<pad name="GPIO27" x="-1.27" y="33.02" drill="0.8" rot="R90"/>
-<pad name="GND3" x="1.27" y="33.02" drill="0.8" rot="R90"/>
-<pad name="GPIO17" x="-1.27" y="35.56" drill="0.8" rot="R90"/>
-<pad name="GPIO18" x="1.27" y="35.56" drill="0.8" rot="R90"/>
-<pad name="GND5" x="-1.27" y="38.1" drill="0.8" rot="R90"/>
-<pad name="RX" x="1.27" y="38.1" drill="0.8" rot="R90"/>
-<pad name="GPIO4" x="-1.27" y="40.64" drill="0.8" rot="R90"/>
-<pad name="TX" x="1.27" y="40.64" drill="0.8" rot="R90"/>
-<pad name="SCL" x="-1.27" y="43.18" drill="0.8" rot="R90"/>
-<pad name="GND4" x="1.27" y="43.18" drill="0.8" rot="R90"/>
-<pad name="SDA" x="-1.27" y="45.72" drill="0.8" rot="R90"/>
-<pad name="5V" x="1.27" y="45.72" drill="0.8" rot="R90"/>
-<pad name="3_3V" x="-1.27" y="48.26" drill="0.8" rot="R90"/>
-<pad name="5V1" x="1.27" y="48.26" drill="0.8" rot="R90"/>
-<wire x1="-4.445" y1="-5.08" x2="4.445" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-5.08" x2="4.445" y2="53.34" width="0.127" layer="21"/>
-<wire x1="4.445" y1="53.34" x2="-4.445" y2="53.34" width="0.127" layer="21"/>
-<wire x1="-4.445" y1="53.34" x2="-4.445" y2="-5.08" width="0.127" layer="21"/>
-</package>
 <package name="9POS_MINI_DIN">
 <pad name="E2" x="7.239" y="-5.588" drill="2.286"/>
 <pad name="E1" x="-7.239" y="-5.588" drill="2.286"/>
@@ -288,11 +233,6 @@
 <wire x1="-25" y1="0" x2="-25" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="11.43" y1="0" x2="25" y2="0" width="0.127" layer="21"/>
 <wire x1="25" y1="0" x2="25" y2="-6.35" width="0.127" layer="21"/>
-</package>
-<package name="MAIN">
-<pad name="GROUND" x="0" y="0" drill="2.286" diameter="5.715"/>
-<pad name="HOT" x="-7.62" y="0" drill="2.286" diameter="5.715"/>
-<pad name="NEUTRAL" x="7.62" y="0" drill="2.286" diameter="5.715"/>
 </package>
 <package name="ATLAS_DO_WITH_ICON">
 <pad name="GND" x="-2.54" y="8.89" drill="0.8" shape="octagon"/>
@@ -954,18 +894,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="T9AS1D12-5">
-<pin name="NO" x="-15.24" y="5.08" length="short"/>
-<pin name="COM" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="COIL1" x="-15.24" y="-5.08" length="short"/>
-<pin name="COIL2" x="10.16" y="-5.08" length="short" rot="R180"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<text x="-12.7" y="12.7" size="1.27" layer="95" ratio="10">&gt;Name</text>
-<text x="-12.7" y="-12.7" size="1.27" layer="96" ratio="10">&gt;Value</text>
-</symbol>
 <symbol name="VTB8441BH">
 <pin name="CATH" x="-7.62" y="0" length="short"/>
 <pin name="ANODE" x="5.08" y="0" length="short" rot="R180"/>
@@ -1006,52 +934,6 @@
 <wire x1="7.62" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PIN_20X2_NOTFLIPPED">
-<pin name="5V1" x="-12.7" y="17.78" length="short" direction="pwr"/>
-<pin name="5V" x="-12.7" y="15.24" length="short" direction="pwr"/>
-<pin name="GND4" x="-12.7" y="12.7" length="short" direction="pwr"/>
-<pin name="TX" x="-12.7" y="10.16" length="short"/>
-<pin name="RX" x="-12.7" y="7.62" length="short"/>
-<pin name="GPIO18" x="-12.7" y="5.08" length="short"/>
-<pin name="GND3" x="-12.7" y="2.54" length="short" direction="pwr"/>
-<pin name="GPIO23" x="-12.7" y="0" length="short"/>
-<pin name="GPIO24" x="-12.7" y="-2.54" length="short"/>
-<pin name="GND2" x="-12.7" y="-5.08" length="short" direction="pwr"/>
-<pin name="GPIO25" x="-12.7" y="-7.62" length="short"/>
-<pin name="CE0" x="-12.7" y="-10.16" length="short"/>
-<pin name="CE1" x="-12.7" y="-12.7" length="short"/>
-<pin name="ID_SC" x="-12.7" y="-15.24" length="short"/>
-<pin name="GND1" x="-12.7" y="-17.78" length="short" direction="pwr"/>
-<pin name="GPIO12" x="-12.7" y="-20.32" length="short"/>
-<pin name="GND" x="-12.7" y="-22.86" length="short" direction="pwr"/>
-<pin name="GPIO16" x="-12.7" y="-25.4" length="short"/>
-<pin name="GPIO20" x="-12.7" y="-27.94" length="short"/>
-<pin name="GPIO21" x="-12.7" y="-30.48" length="short"/>
-<pin name="GND7" x="15.24" y="-30.48" length="short" direction="pwr" rot="R180"/>
-<pin name="GPIO26" x="15.24" y="-27.94" length="short" direction="pwr" rot="R180"/>
-<pin name="GPIO19" x="15.24" y="-25.4" length="short" rot="R180"/>
-<pin name="GPIO13" x="15.24" y="-22.86" length="short" rot="R180"/>
-<pin name="GPIO6" x="15.24" y="-20.32" length="short" rot="R180"/>
-<pin name="GPIO5" x="15.24" y="-17.78" length="short" rot="R180"/>
-<pin name="ID_SD" x="15.24" y="-15.24" length="short" rot="R180"/>
-<pin name="GND6" x="15.24" y="-12.7" length="short" direction="pwr" rot="R180"/>
-<pin name="SCLK" x="15.24" y="-10.16" length="short" rot="R180"/>
-<pin name="MISO" x="15.24" y="-7.62" length="short" rot="R180"/>
-<pin name="MOSI" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="3_3V1" x="15.24" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="GPIO22" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="GPIO27" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="GPIO17" x="15.24" y="5.08" length="short" rot="R180"/>
-<pin name="GND5" x="15.24" y="7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="GPIO4" x="15.24" y="10.16" length="short" rot="R180"/>
-<pin name="SCL" x="15.24" y="12.7" length="short" rot="R180"/>
-<pin name="SDA" x="15.24" y="15.24" length="short" rot="R180"/>
-<pin name="3_3V" x="15.24" y="17.78" length="short" direction="pwr" rot="R180"/>
-<wire x1="-10.16" y1="-33.02" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="20.32" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-33.02" x2="-10.16" y2="-33.02" width="0.254" layer="94"/>
-</symbol>
 <symbol name="9POS_MINI_DIN">
 <pin name="P6" x="0" y="7.62" length="short" rot="R270"/>
 <pin name="P2" x="-5.08" y="7.62" length="short" rot="R270"/>
@@ -1077,15 +959,6 @@
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="MAIN">
-<pin name="GROUND" x="5.08" y="0" length="short" direction="pwr" rot="R180"/>
-<pin name="NEUTRAL" x="5.08" y="5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="HOT" x="5.08" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="ATLAS_DO_WITH_ICON">
 <pin name="TX" x="0" y="10.16" length="short" rot="R270"/>
@@ -1125,37 +998,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="T9AS1D12-5" prefix="K">
-<description>&lt;b&gt;T9AS1D12-5&lt;/b&gt; - Power Relay
-
-&lt;p&gt;Technical Specifications:
-&lt;ul&gt;
-&lt;li&gt;Coil Current: 200 mA&lt;/li&gt;
-&lt;li&gt;Coil Voltage: 5VDC&lt;/li&gt;
-&lt;li&gt;Switching Voltage: 277 VAC&lt;/li&gt;
-&lt;li&gt;Contact Rating (Current): 30 A&lt;/li&gt;
-&lt;li&gt;Coil Resistance: 25 Ohms&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Digikey: PB1014-ND&lt;br/&gt;</description>
-<gates>
-<gate name="G$1" symbol="T9AS1D12-5" x="-17.78" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="T9AS1D12-5">
-<connects>
-<connect gate="G$1" pin="COIL1" pad="COIL1"/>
-<connect gate="G$1" pin="COIL2" pad="COIL2"/>
-<connect gate="G$1" pin="COM" pad="COM"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VTB8441BH">
 <gates>
 <gate name="G$1" symbol="VTB8441BH" x="0" y="0"/>
@@ -1220,60 +1062,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PIN_20X2_NOTFLIPPED">
-<gates>
-<gate name="G$1" symbol="PIN_20X2_NOTFLIPPED" x="0" y="7.62"/>
-</gates>
-<devices>
-<device name="" package="PIN_20X2_NOTFLIPPED">
-<connects>
-<connect gate="G$1" pin="3_3V" pad="3_3V"/>
-<connect gate="G$1" pin="3_3V1" pad="3_3V1"/>
-<connect gate="G$1" pin="5V" pad="5V"/>
-<connect gate="G$1" pin="5V1" pad="5V1"/>
-<connect gate="G$1" pin="CE0" pad="GPIO8"/>
-<connect gate="G$1" pin="CE1" pad="GPIO7"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND1" pad="GND1"/>
-<connect gate="G$1" pin="GND2" pad="GND2"/>
-<connect gate="G$1" pin="GND3" pad="GND3"/>
-<connect gate="G$1" pin="GND4" pad="GND4"/>
-<connect gate="G$1" pin="GND5" pad="GND5"/>
-<connect gate="G$1" pin="GND6" pad="GND6"/>
-<connect gate="G$1" pin="GND7" pad="GND7"/>
-<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
-<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
-<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
-<connect gate="G$1" pin="GPIO17" pad="GPIO17"/>
-<connect gate="G$1" pin="GPIO18" pad="GPIO18"/>
-<connect gate="G$1" pin="GPIO19" pad="GPIO19"/>
-<connect gate="G$1" pin="GPIO20" pad="GPIO20"/>
-<connect gate="G$1" pin="GPIO21" pad="GPIO21"/>
-<connect gate="G$1" pin="GPIO22" pad="GPIO22"/>
-<connect gate="G$1" pin="GPIO23" pad="GPIO23"/>
-<connect gate="G$1" pin="GPIO24" pad="GPIO24"/>
-<connect gate="G$1" pin="GPIO25" pad="GPIO25"/>
-<connect gate="G$1" pin="GPIO26" pad="GPIO26"/>
-<connect gate="G$1" pin="GPIO27" pad="GPIO27"/>
-<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
-<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
-<connect gate="G$1" pin="GPIO6" pad="GPIO6"/>
-<connect gate="G$1" pin="ID_SC" pad="ID_SC"/>
-<connect gate="G$1" pin="ID_SD" pad="ID_SD"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SCLK" pad="SCLK"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="9POS_MINI_DIN">
 <gates>
 <gate name="G$1" symbol="9POS_MINI_DIN" x="5.08" y="-2.54"/>
@@ -1307,23 +1095,6 @@
 <device name="" package="IEC_FEMALE">
 <connects>
 <connect gate="G$1" pin="GND" pad="GROUND"/>
-<connect gate="G$1" pin="HOT" pad="HOT"/>
-<connect gate="G$1" pin="NEUTRAL" pad="NEUTRAL"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAIN">
-<gates>
-<gate name="G$1" symbol="MAIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MAIN">
-<connects>
-<connect gate="G$1" pin="GROUND" pad="GROUND"/>
 <connect gate="G$1" pin="HOT" pad="HOT"/>
 <connect gate="G$1" pin="NEUTRAL" pad="NEUTRAL"/>
 </connects>
@@ -6746,6 +6517,243 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="FreshBytes">
+<packages>
+<package name="RPI_ZERO">
+<hole x="0" y="0" drill="2.75"/>
+<hole x="0" y="57.999884375" drill="2.75"/>
+<hole x="23.00000625" y="57.999884375" drill="2.75"/>
+<hole x="23.00000625" y="0" drill="2.75"/>
+<pad name="3.3V" x="1.27" y="53.130015625" drill="0.6" shape="square"/>
+<pad name="5V" x="-1.27" y="53.130015625" drill="0.6"/>
+<pad name="5V1" x="-1.27" y="50.590015625" drill="0.6"/>
+<pad name="GND" x="-1.27" y="48.050015625" drill="0.6"/>
+<pad name="TX" x="-1.27" y="45.510015625" drill="0.6"/>
+<pad name="RX" x="-1.27" y="42.970015625" drill="0.6"/>
+<pad name="CLK" x="-1.27" y="40.430015625" drill="0.6"/>
+<pad name="GND1" x="-1.27" y="37.890015625" drill="0.6"/>
+<pad name="GPIO23" x="-1.27" y="35.350015625" drill="0.6"/>
+<pad name="GPIO24" x="-1.27" y="32.810015625" drill="0.6"/>
+<pad name="GND2" x="-1.27" y="30.270015625" drill="0.6"/>
+<pad name="GPIO25" x="-1.27" y="27.730015625" drill="0.6"/>
+<pad name="GPIO7" x="-1.27" y="25.190015625" drill="0.6"/>
+<pad name="GPIO8" x="-1.27" y="22.650015625" drill="0.6"/>
+<pad name="ID_SC" x="-1.27" y="20.110015625" drill="0.6"/>
+<pad name="GND3" x="-1.27" y="17.570015625" drill="0.6"/>
+<pad name="GPIO12" x="-1.27" y="15.030015625" drill="0.6"/>
+<pad name="GND4" x="-1.27" y="12.490015625" drill="0.6"/>
+<pad name="GPIO16" x="-1.27" y="9.950015625" drill="0.6"/>
+<pad name="GPIO20" x="-1.27" y="7.410015625" drill="0.6"/>
+<pad name="GPIO21" x="-1.27" y="4.870015625" drill="0.6"/>
+<pad name="SDA" x="1.27" y="50.590015625" drill="0.6"/>
+<pad name="SCL" x="1.27" y="48.050015625" drill="0.6"/>
+<pad name="GPIO4" x="1.27" y="45.510015625" drill="0.6"/>
+<pad name="GPIO27" x="1.27" y="37.890015625" drill="0.6"/>
+<pad name="GPIO17" x="1.27" y="40.430015625" drill="0.6"/>
+<pad name="GND5" x="1.27" y="42.970015625" drill="0.6"/>
+<pad name="GPIO22" x="1.27" y="35.350015625" drill="0.6"/>
+<pad name="MOSI" x="1.27" y="30.270015625" drill="0.6"/>
+<pad name="3.3V1" x="1.27" y="32.810015625" drill="0.6"/>
+<pad name="SCLK" x="1.27" y="25.190015625" drill="0.6"/>
+<pad name="GND6" x="1.27" y="22.650015625" drill="0.6"/>
+<pad name="ID_SD" x="1.27" y="20.110015625" drill="0.6"/>
+<pad name="GPIO5" x="1.27" y="17.570015625" drill="0.6"/>
+<pad name="GPIO6" x="1.27" y="15.030015625" drill="0.6"/>
+<pad name="GPIO13" x="1.27" y="12.490015625" drill="0.6"/>
+<pad name="MISO" x="1.27" y="27.730015625" drill="0.6"/>
+<pad name="GPIO19" x="1.27" y="9.950015625" drill="0.6"/>
+<pad name="GPIO26" x="1.27" y="7.410015625" drill="0.6"/>
+<pad name="GND7" x="1.27" y="4.870015625" drill="0.6"/>
+<circle x="0" y="0" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="42"/>
+</package>
+<package name="POWER_IN">
+<pad name="GND" x="0" y="0" drill="1.8"/>
+<pad name="HOT" x="7" y="0" drill="1.8"/>
+<pad name="NEUTRAL" x="-7" y="0" drill="1.8"/>
+<hole x="-19.75" y="-7.3" drill="3.5"/>
+<hole x="19.75" y="-7.3" drill="3.5"/>
+<wire x1="-12" y1="0" x2="-25" y2="0" width="0.127" layer="51"/>
+<wire x1="-25" y1="0" x2="-25" y2="-5" width="0.127" layer="51"/>
+<wire x1="12" y1="0" x2="25" y2="0" width="0.127" layer="51"/>
+<wire x1="25" y1="0" x2="25" y2="-5" width="0.127" layer="51"/>
+</package>
+<package name="RELAY">
+<pad name="COIL1" x="-13.97" y="-15.24" drill="1.0922"/>
+<pad name="COIL2" x="-3.81" y="-15.24" drill="1.0922"/>
+<pad name="COM" x="-17.78" y="-2.54" drill="1.9812"/>
+<pad name="NO" x="0" y="0" drill="2.0574"/>
+<wire x1="5.3848" y1="10.16" x2="5.3848" y2="-22.352" width="0.127" layer="51"/>
+<wire x1="5.3848" y1="10.16" x2="-22.0472" y2="10.16" width="0.127" layer="51"/>
+<wire x1="-22.0472" y1="10.16" x2="-22.0472" y2="-22.352" width="0.127" layer="51"/>
+<wire x1="-22.0472" y1="-22.352" x2="5.3848" y2="-22.352" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RPI_ZERO">
+<pin name="3.3V" x="10.16" y="15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="SDA" x="10.16" y="12.7" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="10.16" length="short" rot="R180"/>
+<pin name="GPIO4" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="GND5" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="GPIO17" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="GPIO27" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="GPIO22" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="3.3V1" x="10.16" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="MOSI" x="10.16" y="-7.62" length="short" rot="R180"/>
+<pin name="MISO" x="10.16" y="-10.16" length="short" rot="R180"/>
+<pin name="SCLK" x="10.16" y="-12.7" length="short" rot="R180"/>
+<pin name="GND6" x="10.16" y="-15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="ID_SD" x="10.16" y="-17.78" length="short" rot="R180"/>
+<pin name="GPIO5" x="10.16" y="-20.32" length="short" rot="R180"/>
+<pin name="GPIO6" x="10.16" y="-22.86" length="short" rot="R180"/>
+<pin name="GPIO13" x="10.16" y="-25.4" length="short" rot="R180"/>
+<pin name="GPIO19" x="10.16" y="-27.94" length="short" rot="R180"/>
+<pin name="GPIO26" x="10.16" y="-30.48" length="short" rot="R180"/>
+<pin name="GND7" x="10.16" y="-33.02" length="short" direction="pwr" rot="R180"/>
+<pin name="5V" x="-15.24" y="15.24" length="short" direction="pwr"/>
+<pin name="5V1" x="-15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="GND" x="-15.24" y="10.16" length="short" direction="pwr"/>
+<pin name="TX" x="-15.24" y="7.62" length="short"/>
+<pin name="RX" x="-15.24" y="5.08" length="short"/>
+<pin name="CLK" x="-15.24" y="2.54" length="short"/>
+<pin name="GND1" x="-15.24" y="0" length="short" direction="pwr"/>
+<pin name="GPIO23" x="-15.24" y="-2.54" length="short"/>
+<pin name="GPIO24" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND2" x="-15.24" y="-7.62" length="short"/>
+<pin name="GPIO25" x="-15.24" y="-10.16" length="short"/>
+<pin name="GPIO7" x="-15.24" y="-12.7" length="short"/>
+<pin name="GPIO8" x="-15.24" y="-15.24" length="short"/>
+<pin name="ID_SC" x="-15.24" y="-17.78" length="short"/>
+<pin name="GND3" x="-15.24" y="-20.32" length="short" direction="pwr"/>
+<pin name="GPIO12" x="-15.24" y="-22.86" length="short"/>
+<pin name="GND4" x="-15.24" y="-25.4" length="short"/>
+<pin name="GPIO16" x="-15.24" y="-27.94" length="short"/>
+<pin name="GPIO20" x="-15.24" y="-30.48" length="short"/>
+<pin name="GPIO21" x="-15.24" y="-33.02" length="short"/>
+<wire x1="-12.7" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-35.56" x2="-12.7" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-35.56" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="POWER_IN">
+<pin name="NEUTRAL" x="7.62" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="7.62" y="0" length="middle" rot="R180"/>
+<pin name="HOT" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<wire x1="2.54" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RELAY">
+<pin name="COIL1" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="NO" x="7.62" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="COIL2" x="-15.24" y="2.54" length="short"/>
+<pin name="COM" x="-15.24" y="-2.54" length="short" direction="pwr"/>
+<wire x1="-12.7" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RPI_ZERO">
+<gates>
+<gate name="G$1" symbol="RPI_ZERO" x="2.54" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="RPI_ZERO">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="3.3V1" pad="3.3V1"/>
+<connect gate="G$1" pin="5V" pad="5V"/>
+<connect gate="G$1" pin="5V1" pad="5V1"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="GND5" pad="GND5"/>
+<connect gate="G$1" pin="GND6" pad="GND6"/>
+<connect gate="G$1" pin="GND7" pad="GND7"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="GPIO17" pad="GPIO17"/>
+<connect gate="G$1" pin="GPIO19" pad="GPIO19"/>
+<connect gate="G$1" pin="GPIO20" pad="GPIO20"/>
+<connect gate="G$1" pin="GPIO21" pad="GPIO21"/>
+<connect gate="G$1" pin="GPIO22" pad="GPIO22"/>
+<connect gate="G$1" pin="GPIO23" pad="GPIO23"/>
+<connect gate="G$1" pin="GPIO24" pad="GPIO24"/>
+<connect gate="G$1" pin="GPIO25" pad="GPIO25"/>
+<connect gate="G$1" pin="GPIO26" pad="GPIO26"/>
+<connect gate="G$1" pin="GPIO27" pad="GPIO27"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="GPIO6" pad="GPIO6"/>
+<connect gate="G$1" pin="GPIO7" pad="GPIO7"/>
+<connect gate="G$1" pin="GPIO8" pad="GPIO8"/>
+<connect gate="G$1" pin="ID_SC" pad="ID_SC"/>
+<connect gate="G$1" pin="ID_SD" pad="ID_SD"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SCLK" pad="SCLK"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER_IN">
+<gates>
+<gate name="G$1" symbol="POWER_IN" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWER_IN">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HOT" pad="HOT"/>
+<connect gate="G$1" pin="NEUTRAL" pad="NEUTRAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RELAY">
+<gates>
+<gate name="G$1" symbol="RELAY" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="RELAY">
+<connects>
+<connect gate="G$1" pin="COIL1" pad="COIL1"/>
+<connect gate="G$1" pin="COIL2" pad="COIL2"/>
+<connect gate="G$1" pin="COM" pad="COM"/>
+<connect gate="G$1" pin="NO" pad="NO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6772,8 +6780,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="R6" library="resistor" deviceset="R-US_" device="R0805" value="470"/>
 <part name="OK1" library="optocoupler" deviceset="PC817" device=""/>
 <part name="OK2" library="optocoupler" deviceset="PC817" device=""/>
-<part name="K1" library="BloomWall" deviceset="T9AS1D12-5" device=""/>
-<part name="K2" library="BloomWall" deviceset="T9AS1D12-5" device=""/>
 <part name="U$2" library="BloomWall" deviceset="VTB8441BH" device=""/>
 <part name="U$3" library="BloomWall" deviceset="VTB8441BH" device=""/>
 <part name="U$17" library="BloomWall" deviceset="RAC02-05SC_ACDCCONVERTER" device=""/>
@@ -6782,11 +6788,9 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="R9" library="adafruit" deviceset="R-US_" device="R0805" value="4.7K"/>
-<part name="U$1" library="BloomWall" deviceset="PIN_20X2_NOTFLIPPED" device=""/>
 <part name="U$4" library="BloomWall" deviceset="9POS_MINI_DIN" device=""/>
 <part name="U$6" library="BloomWall" deviceset="IEC_FEMALE" device=""/>
 <part name="U$7" library="BloomWall" deviceset="IEC_FEMALE" device=""/>
-<part name="U$12" library="BloomWall" deviceset="MAIN" device=""/>
 <part name="U$5" library="BloomWall" deviceset="ATLAS_DO_WITH_ICON" device=""/>
 <part name="U$8" library="BloomWall" deviceset="ATLAS_PH_WITH_ICON" device=""/>
 <part name="U$9" library="BloomWall" deviceset="ATLAS_PPM_WITH_ICON" device=""/>
@@ -6795,6 +6799,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="U$1" library="FreshBytes" deviceset="POWER_IN" device=""/>
+<part name="U$11" library="FreshBytes" deviceset="RELAY" device=""/>
+<part name="U$12" library="FreshBytes" deviceset="RELAY" device=""/>
+<part name="U$13" library="FreshBytes" deviceset="RPI_ZERO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6813,8 +6821,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="R6" gate="G$1" x="-7.62" y="-30.48"/>
 <instance part="OK1" gate="A" x="-27.94" y="48.26"/>
 <instance part="OK2" gate="A" x="-27.94" y="-27.94"/>
-<instance part="K1" gate="G$1" x="40.64" y="63.5" rot="R270"/>
-<instance part="K2" gate="G$1" x="40.64" y="-15.24" rot="R270"/>
 <instance part="U$2" gate="G$1" x="10.16" y="63.5" rot="R270"/>
 <instance part="U$3" gate="G$1" x="12.7" y="5.08" rot="R270"/>
 <instance part="U$17" gate="G$1" x="-45.72" y="106.68"/>
@@ -6823,12 +6829,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="MUX" gate="G$1" x="274.32" y="66.04"/>
 <instance part="R7" gate="G$1" x="220.98" y="99.06" rot="R90"/>
 <instance part="R8" gate="G$1" x="233.68" y="99.06" rot="R90"/>
-<instance part="R9" gate="G$1" x="256.54" y="15.24" rot="R90"/>
-<instance part="U$1" gate="G$1" x="190.5" y="101.6"/>
+<instance part="R9" gate="G$1" x="259.08" y="15.24" rot="R90"/>
 <instance part="U$4" gate="G$1" x="408.94" y="93.98" rot="R90"/>
-<instance part="U$6" gate="G$1" x="50.8" y="96.52" rot="R270"/>
-<instance part="U$7" gate="G$1" x="50.8" y="20.32" rot="R270"/>
-<instance part="U$12" gate="G$1" x="-114.3" y="109.22"/>
+<instance part="U$6" gate="G$1" x="45.72" y="96.52" rot="R270"/>
+<instance part="U$7" gate="G$1" x="48.26" y="20.32" rot="R270"/>
 <instance part="U$5" gate="G$1" x="327.66" y="93.98" rot="R90"/>
 <instance part="U$8" gate="G$1" x="327.66" y="76.2" rot="R90"/>
 <instance part="U$9" gate="G$1" x="327.66" y="58.42" rot="R90"/>
@@ -6837,6 +6841,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="GND3" gate="1" x="215.9" y="66.04" rot="R90"/>
 <instance part="GND4" gate="1" x="228.6" y="83.82"/>
 <instance part="GND5" gate="1" x="220.98" y="116.84" rot="R180"/>
+<instance part="U$1" gate="G$1" x="-116.84" y="109.22"/>
+<instance part="U$11" gate="G$1" x="38.1" y="71.12" rot="R90"/>
+<instance part="U$12" gate="G$1" x="40.64" y="-10.16" rot="R90"/>
+<instance part="U$13" gate="G$1" x="195.58" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -6848,8 +6856,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-132.08" y1="63.5" x2="-132.08" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="137.16" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="ID_SC"/>
+<wire x1="165.1" y1="86.36" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="ID_SC"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6885,16 +6893,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-68.58" y1="-40.64" x2="-48.26" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-40.64" x2="-68.58" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-68.58" y="-40.64"/>
-<wire x1="177.8" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="81.28" x2="162.56" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="7.62" x2="436.88" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-58.42" x2="162.56" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="-58.42" x2="162.56" y2="7.62" width="0.1524" layer="91"/>
 <junction x="162.56" y="7.62"/>
-<pinref part="U$1" gate="G$1" pin="GPIO12"/>
 <pinref part="U$4" gate="G$1" pin="P8"/>
 <wire x1="414.02" y1="91.44" x2="436.88" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="91.44" x2="436.88" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="GPIO12"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6952,10 +6960,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <pinref part="T4" gate="G$1" pin="C"/>
 <wire x1="12.7" y1="0" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-25.4" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-25.4" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="12.7" y="-25.4"/>
-<pinref part="K2" gate="G$1" pin="COIL2"/>
 <pinref part="U$3" gate="G$1" pin="ANODE"/>
+<pinref part="U$12" gate="G$1" pin="COIL2"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -6963,10 +6971,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="T3" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="50.8" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="50.8" x2="35.56" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="50.8" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="50.8" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <junction x="10.16" y="50.8"/>
-<pinref part="K1" gate="G$1" pin="COIL2"/>
 <pinref part="U$2" gate="G$1" pin="ANODE"/>
+<pinref part="U$11" gate="G$1" pin="COIL2"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -6987,17 +6995,15 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-15.24" y1="81.28" x2="-15.24" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="116.84" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="OK2" gate="A" pin="COL"/>
-<wire x1="35.56" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="33.02" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="33.02" x2="-20.32" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <junction x="12.7" y="33.02"/>
-<wire x1="35.56" y1="0" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<junction x="35.56" y="33.02"/>
-<pinref part="K1" gate="G$1" pin="COIL1"/>
-<pinref part="K2" gate="G$1" pin="COIL1"/>
+<wire x1="38.1" y1="-2.54" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<junction x="38.1" y="33.02"/>
 <pinref part="U$2" gate="G$1" pin="CATH"/>
 <pinref part="U$3" gate="G$1" pin="CATH"/>
 <pinref part="U$17" gate="G$1" pin="+VDCOUT"/>
@@ -7005,6 +7011,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="X1" gate="-2" pin="S"/>
 <wire x1="5.08" y1="99.06" x2="-5.08" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-5.08" y="99.06"/>
+<pinref part="U$11" gate="G$1" pin="COIL1"/>
+<pinref part="U$12" gate="G$1" pin="COIL1"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -7026,16 +7034,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="N$9" class="1">
 <segment>
-<pinref part="K1" gate="G$1" pin="NO"/>
-<wire x1="45.72" y1="78.74" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="78.74" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="HOT"/>
+<pinref part="U$11" gate="G$1" pin="NO"/>
 </segment>
 </net>
 <net name="N$17" class="1">
 <segment>
-<pinref part="K2" gate="G$1" pin="NO"/>
-<wire x1="45.72" y1="0" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-2.54" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="HOT"/>
+<pinref part="U$12" gate="G$1" pin="NO"/>
 </segment>
 </net>
 <net name="N$19" class="1">
@@ -7045,16 +7053,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-83.82" y1="104.14" x2="-60.96" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="104.14" x2="-83.82" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="-83.82" y="104.14"/>
-<pinref part="K2" gate="G$1" pin="COM"/>
 <wire x1="-83.82" y1="-48.26" x2="43.18" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-48.26" x2="43.18" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="-48.26" x2="124.46" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="43.18" y="-48.26"/>
 <wire x1="124.46" y1="-48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="K1" gate="G$1" pin="COM"/>
-<wire x1="124.46" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="48.26" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="HOT"/>
+<wire x1="124.46" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="48.26" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="HOT"/>
+<pinref part="U$11" gate="G$1" pin="COM"/>
+<pinref part="U$12" gate="G$1" pin="COM"/>
 </segment>
 </net>
 <net name="N$20" class="1">
@@ -7066,13 +7074,13 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <junction x="-60.96" y="119.38"/>
 <wire x1="104.14" y1="119.38" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="88.9" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="12.7" x2="53.34" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <junction x="104.14" y="88.9"/>
 <wire x1="-109.22" y1="114.3" x2="-109.22" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="NEUTRAL"/>
 <pinref part="U$7" gate="G$1" pin="NEUTRAL"/>
-<pinref part="U$12" gate="G$1" pin="NEUTRAL"/>
+<pinref part="U$1" gate="G$1" pin="NEUTRAL"/>
 </segment>
 </net>
 <net name="PGND" class="1">
@@ -7082,21 +7090,21 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-78.74" y1="127" x2="111.76" y2="127" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="127" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="81.28" x2="111.76" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="2.54" x2="50.8" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="2.54" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="88.9" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="2.54" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="88.9" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
 <junction x="111.76" y="81.28"/>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
-<pinref part="U$12" gate="G$1" pin="GROUND"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="MUX" gate="G$1" pin="X-COM"/>
 <wire x1="261.62" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GPIO13"/>
+<pinref part="U$13" gate="G$1" pin="GPIO13"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -7105,7 +7113,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="254" y1="81.28" x2="254" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="MUX" gate="G$1" pin="Y-COM"/>
 <wire x1="254" y1="73.66" x2="261.62" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GPIO6"/>
+<pinref part="U$13" gate="G$1" pin="GPIO6"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -7168,7 +7176,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="220.98" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="93.98" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
 <junction x="220.98" y="91.44"/>
-<pinref part="U$1" gate="G$1" pin="SCLK"/>
+<pinref part="U$13" gate="G$1" pin="SCLK"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -7196,10 +7204,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="MUX" gate="G$1" pin="INH"/>
 <wire x1="261.62" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
 <junction x="238.76" y="58.42"/>
-<pinref part="U$1" gate="G$1" pin="GPIO19"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
 <pinref part="U$8" gate="G$1" pin="GND"/>
 <pinref part="U$9" gate="G$1" pin="GND"/>
+<pinref part="U$13" gate="G$1" pin="GPIO19"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -7221,10 +7229,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="256.54" y1="111.76" x2="350.52" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="111.76" x2="350.52" y2="88.9" width="0.1524" layer="91"/>
 <junction x="350.52" y="88.9"/>
-<pinref part="U$1" gate="G$1" pin="GPIO26"/>
 <pinref part="U$5" gate="G$1" pin="VCC"/>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <pinref part="U$9" gate="G$1" pin="VCC"/>
+<pinref part="U$13" gate="G$1" pin="GPIO26"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -7236,21 +7244,21 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="104.14" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
 <junction x="220.98" y="106.68"/>
-<pinref part="U$1" gate="G$1" pin="GPIO17"/>
+<pinref part="U$13" gate="G$1" pin="GPIO17"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<wire x1="177.8" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="71.12" x2="170.18" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="20.32" x2="256.54" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="20.32" x2="426.72" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="20.32" x2="259.08" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="20.32" x2="426.72" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<junction x="256.54" y="20.32"/>
-<pinref part="U$1" gate="G$1" pin="GPIO21"/>
+<junction x="259.08" y="20.32"/>
 <pinref part="U$4" gate="G$1" pin="P4"/>
 <wire x1="414.02" y1="81.28" x2="426.72" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="81.28" x2="426.72" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="GPIO21"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -7268,6 +7276,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="386.08" y1="63.5" x2="386.08" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="78.74" x2="401.32" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="PRB2"/>
+<pinref part="U$4" gate="G$1" pin="P3"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -7276,14 +7285,18 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="381" y1="76.2" x2="381" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="381" y1="83.82" x2="401.32" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="PRB"/>
+<pinref part="U$4" gate="G$1" pin="P1"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <wire x1="337.82" y1="81.28" x2="375.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="81.28" x2="375.92" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="88.9" x2="403.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="88.9" x2="401.32" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="PGND"/>
+<pinref part="U$4" gate="G$1" pin="P2"/>
+<wire x1="401.32" y1="88.9" x2="403.86" y2="88.9" width="0.1524" layer="91"/>
+<junction x="401.32" y="88.9"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -7308,16 +7321,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="172.72" y1="129.54" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND4"/>
-<wire x1="172.72" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND3"/>
-<wire x1="177.8" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="104.14" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
 <junction x="172.72" y="114.3"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
-<wire x1="177.8" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="96.52" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <junction x="172.72" y="104.14"/>
+<pinref part="U$13" gate="G$1" pin="GND"/>
+<pinref part="U$13" gate="G$1" pin="GND1"/>
+<pinref part="U$13" gate="G$1" pin="GND2"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -7327,24 +7340,24 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-129.54" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="134.62" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="83.82" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="165.1" y1="83.82" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="162.56" y="83.82"/>
-<wire x1="177.8" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="78.74" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="78.74" x2="165.1" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="10.16" x2="256.54" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="10.16" x2="431.8" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="10.16" x2="259.08" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="10.16" x2="431.8" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<junction x="256.54" y="10.16"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<junction x="259.08" y="10.16"/>
 <pinref part="U$4" gate="G$1" pin="P5"/>
 <wire x1="414.02" y1="86.36" x2="431.8" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="431.8" y1="86.36" x2="431.8" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="78.74" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
 <junction x="165.1" y="78.74"/>
 <junction x="165.1" y="83.82"/>
+<pinref part="U$13" gate="G$1" pin="GND3"/>
+<pinref part="U$13" gate="G$1" pin="GND4"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -7360,10 +7373,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="210.82" y1="-68.58" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="66.04" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND7"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="213.36" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 <junction x="210.82" y="66.04"/>
+<pinref part="U$13" gate="G$1" pin="GND7"/>
 </segment>
 <segment>
 <wire x1="205.74" y1="88.9" x2="228.6" y2="88.9" width="0.1524" layer="91"/>
@@ -7375,16 +7388,16 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="93.98" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
 <junction x="233.68" y="88.9"/>
-<pinref part="U$1" gate="G$1" pin="GND6"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="228.6" y1="86.36" x2="228.6" y2="88.9" width="0.1524" layer="91"/>
 <junction x="228.6" y="88.9"/>
+<pinref part="U$13" gate="G$1" pin="GND6"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND5"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="205.74" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="109.22" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="GND5"/>
 </segment>
 </net>
 </nets>

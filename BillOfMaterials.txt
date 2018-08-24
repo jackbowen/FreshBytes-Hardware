@@ -11,13 +11,11 @@ from.
 +--------------------------------+---------------------+----------+
 | Part Name                      | Part Number         | Quantity |
 +--------------------------------+---------------------+----------+
-| 40 Pos Socket to Cable         | H1CXS-4036G-ND      | 1        |
-| 40 Pos Female Socket to Cbl    | AE11124-ND          | 1        |
-| 40 Pos Male Socket to Board    | S9175-ND            | 1        |
+| 40 Pos Headers                 | ???????             | 1        |
 | 9 Pos Din Cable                | 839-1054-ND         | 1        |
 | 9 Pos Mini Din Connector       | CP-2290-ND          | 1        |
 | 4x1 MUX                        | 568-10088-1-ND      | 1        |
-| Power Receptacle - Main        | Q210-ND             | 1        |
+| Power Receptacle - Main        | Q219-ND             | 1        |
 | Power Receptacle - Accessories | 486-1343-ND         | 2        |
 | AC DC Converter                | 945-1401-5-ND       | 1        |
 | Relay                          | PB1014-ND           | 2        |
@@ -28,7 +26,7 @@ from.
 | 4.7k Ohm 0805 Resistor         | RMCF0805JT4K70CT-ND | 1        |
 | 10k Ohm 0805 Resistor          | RMCF0805JT10K0CT-ND | 2        |
 | PC817 Opto-isolator            | 425-2774-1-ND       | 2        |
-| 2N2222 Transistor              | ?                   | 2        |
+| 2N2222 Transistor              | ???????             | 2        |
 | 2 Pos Screw Terminal           | A121350-ND          | 1        |
 | 1N4148 Diode                   | 1N4148FS-ND         | 2        |
 +--------------------------------+---------------------+----------+
