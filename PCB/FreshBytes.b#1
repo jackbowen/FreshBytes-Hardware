@@ -2427,7 +2427,7 @@ design rules under a new name.</description>
 <element name="U$5" library="BloomWall" package="ATLAS_DO_WITH_ICON" value="ATLAS_DO_WITH_ICON" x="13.799290625" y="35.133159375"/>
 <element name="U$8" library="BloomWall" package="ATLAS_PH_WITH_ICON" value="ATLAS_PH_WITH_ICON" x="30.646265625" y="44.86885"/>
 <element name="U$9" library="BloomWall" package="ATLAS_PPM_WITH_ICON" value="ATLAS_PPM_WITH_ICON" x="47.49325" y="52.4880875"/>
-<element name="U$1" library="FreshBytes" package="POWER_IN" value="POWER_IN" x="152.4" y="15.2908"/>
+<element name="U$1" library="FreshBytes" package="POWER_IN" value="POWER_IN" x="152.4" y="15.3924"/>
 <element name="U$11" library="FreshBytes" package="RELAY" value="RELAY" x="107.854546875" y="40.297309375" rot="R270"/>
 <element name="U$12" library="FreshBytes" package="RELAY" value="RELAY" x="143.32633125" y="36.82631875" rot="R270"/>
 <element name="U$13" library="FreshBytes" package="RPI_ZERO" value="RPI_ZERO" x="3.49999375" y="69.85" rot="R270"/>
@@ -2703,7 +2703,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="HOT"/>
 <contactref element="U$11" pad="COM"/>
 <contactref element="U$12" pad="COM"/>
-<wire x1="159.4" y1="15.2908" x2="172.11755" y2="28.10995" width="6.096" layer="16"/>
+<wire x1="159.4" y1="15.3924" x2="172.11755" y2="28.10995" width="6.096" layer="16"/>
 <wire x1="172.11755" y1="28.10995" x2="174.661421875" y2="28.10995" width="6.096" layer="16"/>
 <wire x1="172.11755" y1="28.10995" x2="145.62118125" y2="54.60631875" width="6.096" layer="16"/>
 <wire x1="145.62118125" y1="54.60631875" x2="140.78633125" y2="54.60631875" width="6.096" layer="16"/>
@@ -2717,7 +2717,7 @@ design rules under a new name.</description>
 <contactref element="U$7" pad="NEUTRAL"/>
 <contactref element="U$1" pad="NEUTRAL"/>
 <wire x1="106.0600125" y1="23.2" x2="137.5924" y2="23.2" width="6.096" layer="16"/>
-<wire x1="137.5924" y1="23.2" x2="145.4" y2="15.2908" width="6.096" layer="16"/>
+<wire x1="137.5924" y1="23.2" x2="145.4" y2="15.3924" width="6.096" layer="16"/>
 <wire x1="159.421421875" y1="28.10995" x2="154.511471875" y2="23.2" width="6.096" layer="16"/>
 <wire x1="154.511471875" y1="23.2" x2="137.5924" y2="23.2" width="6.096" layer="16"/>
 <wire x1="106.0600125" y1="23.2" x2="106.0600125" y2="21.571128125" width="6.096" layer="16"/>
@@ -2735,7 +2735,7 @@ design rules under a new name.</description>
 <wire x1="135.8764125" y1="18.032196875" x2="140.2786375" y2="22.434421875" width="6.096" layer="1"/>
 <wire x1="140.2786375" y1="22.434421875" x2="148.321165625" y2="22.434421875" width="6.096" layer="1"/>
 <wire x1="148.321165625" y1="22.434421875" x2="152.4" y2="18.3555875" width="6.096" layer="1"/>
-<wire x1="152.4" y1="18.3555875" x2="152.4" y2="15.2908" width="6.096" layer="1"/>
+<wire x1="152.4" y1="18.3555875" x2="152.4" y2="15.3924" width="6.096" layer="1"/>
 <wire x1="45.72" y1="23.2" x2="45.72" y2="19.043525" width="6.096" layer="1"/>
 <wire x1="45.72" y1="19.043525" x2="50.7102625" y2="14.0532625" width="6.096" layer="1"/>
 <wire x1="50.7102625" y1="14.0532625" x2="92.551225" y2="14.0532625" width="6.096" layer="1"/>
