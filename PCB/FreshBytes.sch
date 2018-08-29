@@ -6761,7 +6761,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.3048" drill="0.508">
-<clearance class="0" value="0.254"/>
+<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="Power" width="5.715" drill="5.715">
 <clearance class="1" value="0.508"/>

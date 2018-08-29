@@ -6564,14 +6564,14 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pad name="GPIO19" x="1.27" y="9.950015625" drill="0.6"/>
 <pad name="GPIO26" x="1.27" y="7.410015625" drill="0.6"/>
 <pad name="GND7" x="1.27" y="4.870015625" drill="0.6"/>
-<circle x="0" y="0" radius="3.000003125" width="0.127" layer="39"/>
-<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="39"/>
-<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="39"/>
-<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="39"/>
-<circle x="0" y="0" radius="3.000003125" width="0.127" layer="40"/>
-<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="40"/>
-<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="40"/>
-<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="0" y="57.999884375" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="23.00000625" y="0" radius="3.000003125" width="0.127" layer="42"/>
+<circle x="23.00000625" y="57.999884375" radius="3.000003125" width="0.127" layer="42"/>
 </package>
 <package name="POWER_IN">
 <pad name="GND" x="0" y="0" drill="1.8"/>
@@ -6803,6 +6803,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="U$1" library="FreshBytes" deviceset="POWER_IN" device=""/>
 <part name="U$11" library="FreshBytes" deviceset="RELAY" device=""/>
 <part name="U$12" library="FreshBytes" deviceset="RELAY" device=""/>
+<part name="U$13" library="FreshBytes" deviceset="RPI_ZERO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6845,6 +6846,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="U$1" gate="G$1" x="-116.84" y="109.22"/>
 <instance part="U$11" gate="G$1" x="38.1" y="71.12" rot="R90"/>
 <instance part="U$12" gate="G$1" x="40.64" y="-10.16" rot="R90"/>
+<instance part="U$13" gate="G$1" x="198.12" y="177.8"/>
 </instances>
 <busses>
 </busses>
