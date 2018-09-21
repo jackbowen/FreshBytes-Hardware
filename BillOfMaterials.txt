@@ -39,7 +39,7 @@ TODO: these numbers only take into account PCB enclosure and not probe.
 +----------------------------------------------+-------------+----------------------------+
 | M4 x 0.7 mm 12mm Stainless Steel Flat Head   | 93395A257   | 1                          |
 | M4 x 0.7 mm Stainless Steel Nut              | 94150A335   | 1                          |
-| M2.5 x 0.45 mm 3mm Steel Rounded Head Screw  | 92005A052   | 1                          | <-TODO: these need to be 4mm longer
+| M2.5 x 0.45 mm 3mm Steel Rounded Head Screw  | 92005A052   | 1                          | <-TODO: got the A053
 | zinc-plated steel nut for M2.5x0.45mm screw  | 90591A113   | 1 (bag of 100 - we need 9) |
 | M2.5 x 0.45 mm 8mm Stainless Steel Flat Head | 91801A137   | 1                          |
 
